@@ -20,36 +20,39 @@
         rel="stylesheet">
     <title>Legal Soulution</title>
     <style>
-        .eb-garamaond {
+        .eb-garamond {
             font-family: "EB Garamond", serif;
         }
 
-        .poppings {
+        .popping {
             font-family: "Poppins", serif;
         }
     </style>
 
 
 
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-background': '#B68C5A',
+                        'btn-background-hover': '#967144',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 
 
 
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="container mx-auto">
+        <!-- nav section -->
+        <nav class="mb-12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -61,40 +64,82 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-gray-500 popping">
+                            <li><a>Home</a></li>
+                            <li><a>Services <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                        viewBox="0 -960 960 960" width="17px" fill="gray">
+                                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                    </svg></a></li>
+                            <li><a>Cases <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                        width="17px" fill="gray">
+                                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                    </svg></a></li>
+                            <li><a>Blog <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                        width="17px" fill="gray">
+                                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                    </svg></a></li>
+                            <li><a>Contact Us <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                        viewBox="0 -960 960 960" width="17px" fill="gray">
+                                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                    </svg></a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="flex items-center gap-2 w-14 cursor-pointer">
+                        <img src="./images/business.png" alt="">
+                        <h2 class="font-extrabold eb-garamond lg:text-4xl text-2xl">Justice</h2>
+                    </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
+                    <ul class="menu menu-horizontal px-1 popping">
+                        <li><a>Home</a></li>
+                        <li><a>Services <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="17px" fill="gray">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                </svg></a></li>
+                        <li><a>Cases <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="17px" fill="gray">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                </svg></a></li>
+                        <li><a>Blog <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="17px" fill="gray">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                </svg></a></li>
+                        <li><a>Contact Us <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                                    width="17px" fill="gray">
+                                    <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                </svg></a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a
+                        class="btn text-white font-normal bg-btn-background border-none hover:bg-btn-background-hover popping">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
+        <!-- header section -->
+        <div class="hero rounded-lg h-auto" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="lg:py-28 py-20">
+                    <h1 class="mb-5 lg:text-7xl text-4xl font-extrabold eb-garamond">We Provide Effective
+                        <br>
+                        Legal Solutions
+                    </h1>
+                    <p class="mb-5">
+                        There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+                    <div class="flex flex-col lg:flex-row justify-center items-center gap-4 popping">
+                        <input class="input input-bordered w-full" placeholder="Search your services" />
+                        <button class="btn text-white font-normal bg-btn-background border-none hover:bg-btn-background-hover popping px-8">Search</button>
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
     <main>
 
