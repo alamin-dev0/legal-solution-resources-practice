@@ -43,6 +43,7 @@
                         clifford: '#da373d',
                         'btn-background': '#B68C5A',
                         'btn-background-hover': '#967144',
+                        'contact-bg': '#F3F3F3',
                     }
                 }
             }
@@ -514,11 +515,11 @@
 
             <!-- contact container section  -->
             <div class="flex justify-between gap-14 items-center flex-col lg:flex-row">
-                <div class="grid md:grid-cols-2 items-center w-full grid-cols-1">
+                <div class="grid md:grid-cols-2 items-center w-full grid-cols-1 md:bg-contact-bg">
                     <!-- fast contact -->
                     <div>
                         <div
-                            class=" bg-base-100 border-gray-300 hover:bg-gradient-to-b from-gray-200 to-white">
+                            class=" bg-base-100 border-gray-300 bg-contact-bg">
                             <figure class="px-10 pt-10">
                                 <img src="./images/address.png" alt="Shoes" class="rounded-xl text-center mx-auto" />
                             </figure>
@@ -534,7 +535,7 @@
                     <!-- second contact -->
                     <div>
                         <div
-                            class=" bg-base-100 md:border-l md:border-b border-gray-300 hover:bg-gradient-to-b from-gray-200 to-white">
+                            class=" bg-base-100 md:border-l md:border-b border-gray-300 bg-contact-bg">
                             <figure class="px-10 pt-10">
                                 <img src="./images/call.png" alt="Shoes" class="rounded-xl text-center mx-auto" />
                             </figure>
@@ -550,7 +551,7 @@
                     <!-- third contact -->
                     <div>
                         <div
-                            class=" bg-base-100 md:border-t md:border-r border-gray-300 hover:bg-gradient-to-b from-gray-200 to-white">
+                            class=" bg-base-100 md:border-t md:border-r border-gray-300 bg-contact-bg">
                             <figure class="px-10 pt-10">
                                 <img src="./images/email.png" alt="Shoes" class="rounded-xl text-center mx-auto" />
                             </figure>
@@ -565,7 +566,7 @@
                     </div>
                     <!-- fourth contact -->
                     <div>
-                        <div class=" bg-base-100  border-gray-300 hover:bg-gradient-to-b from-gray-200 to-white">
+                        <div class=" bg-base-100  border-gray-300 bg-contact-bg">
                             <figure class="px-10 pt-10">
                                 <img src="./images/time.png" alt="Shoes" class="rounded-xl text-center mx-auto" />
                             </figure>
@@ -581,17 +582,17 @@
                 </div>
                 <!-- input container -->
                 <div class="space-y-6 w-full">
-                    <label class="input input-bordered flex items-center gap-2">
+                    <label class="input input-bordered flex items-center gap-2 bg-contact-bg border-none">
                         <input type="text" class="grow" placeholder="Your Name" />
                     </label>
-                    <label class="input input-bordered flex items-center gap-2">
+                    <label class="input input-bordered flex items-center gap-2 bg-contact-bg border-none">
                         <input type="text" class="grow" placeholder="Your Email" />
                     </label>
-                    <label class="input input-bordered flex items-center gap-2">
+                    <label class="input input-bordered flex items-center gap-2 bg-contact-bg border-none">
                         <input type="text" class="grow" placeholder="Subject" />
                     </label>
                     <textarea placeholder="Your Message"
-                        class="textarea textarea-bordered textarea-lg w-full"></textarea>
+                        class="textarea textarea-bordered textarea-lg w-full bg-contact-bg border-none"></textarea>
                     <button
                         class="btn text-white font-normal bg-btn-background border-none hover:bg-btn-background-hover popping w-full">Send
                         Message</button>
